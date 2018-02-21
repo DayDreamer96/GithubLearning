@@ -1,0 +1,52 @@
+ PROCESS TO CONNECT TO THE GIT ACC
+
+cd
+ls
+cd /E
+ls
+cd git     																	//here git is local folder in E directory
+$ git config --global user.name "DayDreamer96"  							//join to username of git acc
+$ git config --global user.email aishwaryaisave5@gmail.com                  //join to email of git acc
+
+--------------------------------------------------------------------------------
+ PROCESS TO CLONE REPOSITORY
+
+$ git clone https://github.com/DayDreamer96/TestGit.git              // this is used to clone repository from github acc to local pc(whole repository gets copied)
+
+-------------------------------------------------------------------------------
+ PROCESS TO ADD FILE ON REPOSITORY
+
+
+on git bash, go to the directory where u want to upload ur file				//here /E/git/TestGit  (local folder)
+then create a file in that repository which u want to upload on github acc.		// we hv created test1.txt file in /E/git/TestGit
+
+omkar@DESKTOP-JA7QJ9S MINGW64 /E/git   
+$ cd TestGit
+ls
+'~$README.md'   README.md   test1.txt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+	
+$ git add test1.txt                                                                                                                                                                                                                                                                                                                             
+$ git status                                                                                                                                                            
+$ git commit -m "this is commited msg to upload file on github" test1.txt                                                                                               
+$ git push -u origin master                                                                                                                                             
+
+--------------------------------------------------------------------------------------
+
+ PROCESS TO CREATE REPOSITORY ON COMMAND LINE
+ 
+ //first to create empty repository on git hub acc
+ //create the same name of repository folder in local pc 			//i.e. E/git/GithubLearning
+ 
+ //on bash go to new repo to create i.e.  cd E/git/GithubLearning
+ 
+ $ echo "# GithubLearning" >> README.md
+ $ git init
+ $ git add README.md
+ $ git commit -m "first commit for repository"
+ $ git remote add origin https://github.com/DayDreamer96/GithubLearning.git
+ $ git push -u origin master
+ 
+ $ git add git_command.docx
+ $ git commit -m "Git commands" git_command.docx
+ $ git push -u origin master
+ 
